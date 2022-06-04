@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32002.261
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BarberH1", "BarberH1.csproj", "{7F893F37-F3E7-4E43-AF04-D89B3FC8CD76}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7F893F37-F3E7-4E43-AF04-D89B3FC8CD76}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F893F37-F3E7-4E43-AF04-D89B3FC8CD76}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F893F37-F3E7-4E43-AF04-D89B3FC8CD76}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F893F37-F3E7-4E43-AF04-D89B3FC8CD76}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1D98368F-3271-45E6-BC0B-B046B11AFDAE}
+	EndGlobalSection
+EndGlobal

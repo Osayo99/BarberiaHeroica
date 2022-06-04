@@ -1,0 +1,396 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7F893F37-F3E7-4E43-AF04-D89B3FC8CD76}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>BarberH</RootNamespace>
+    <AssemblyName>BarberH</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Users\luis_\OneDrive\Escritorio\CICLO 1-2022\Proyectos de Informatica\BarberiaHeroica\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>3</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>BAA556B8D36594A88A861755229DB3F346C3E52E</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>BarberH_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1484.0\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1484.0\lib\net40\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Design, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1484.0\lib\net40\Microsoft.ReportViewer.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1484.0\lib\net40\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.SqlServer.Types.14.0.1016.290\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AgregarBarbero.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AgregarBarbero.Designer.cs">
+      <DependentUpon>AgregarBarbero.cs</DependentUpon>
+    </Compile>
+    <Compile Include="clases\actividad.cs" />
+    <Compile Include="clases\Barbero.cs" />
+    <Compile Include="clases\Caja.cs" />
+    <Compile Include="clases\CajaChica.cs" />
+    <Compile Include="clases\CajaDiaria.cs" />
+    <Compile Include="clases\CajaNeg.cs" />
+    <Compile Include="clases\HistorialCajaDiaria.cs" />
+    <Compile Include="clases\Movimiento.cs" />
+    <Compile Include="clases\MovimientoNeg.cs" />
+    <Compile Include="clases\Servicio.cs" />
+    <Compile Include="clases\ticketGenerado.cs" />
+    <Compile Include="CRUDs\actividadCRUD.cs" />
+    <Compile Include="Calendarizacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Calendarizacion.Designer.cs">
+      <DependentUpon>Calendarizacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="clases\Cliente.cs" />
+    <Compile Include="conexion\DB_Conexion.cs" />
+    <Compile Include="CRUDs\AgregarBarbero.cs" />
+    <Compile Include="CRUDs\AgregarDatosServicio.cs" />
+    <Compile Include="CRUDs\CajaDat.cs" />
+    <Compile Include="CRUDs\CajaDiariaCRUD.cs" />
+    <Compile Include="CRUDs\CRUDcliente.cs" />
+    <Compile Include="CRUDs\HistorialCajaDiariaCRUD.cs" />
+    <Compile Include="CRUDs\MostrarDatosDgvA.cs" />
+    <Compile Include="CRUDs\MovimientoDat.cs" />
+    <Compile Include="CRUDs\ProductoCRUD.cs" />
+    <Compile Include="clases\AdministradorDB.cs" />
+    <Compile Include="CRUDs\IniciarSesion.cs" />
+    <Compile Include="CRUDs\Registrarse.cs" />
+    <Compile Include="DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DespliegueActividad2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DespliegueActividad2.Designer.cs">
+      <DependentUpon>DespliegueActividad2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DespliegueHorario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DespliegueHorario.Designer.cs">
+      <DependentUpon>DespliegueHorario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FondoGeneral.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FondoGeneral.Designer.cs">
+      <DependentUpon>FondoGeneral.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCajachica.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCajachica.Designer.cs">
+      <DependentUpon>FormCajachica.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCliente.Designer.cs">
+      <DependentUpon>FormCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormRegistro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRegistro.Designer.cs">
+      <DependentUpon>FormRegistro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="clases\horario.cs" />
+    <Compile Include="CRUDs\horarioCRUD.cs" />
+    <Compile Include="InicioDeSesion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InicioDeSesion.Designer.cs">
+      <DependentUpon>InicioDeSesion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventario.Designer.cs">
+      <DependentUpon>Inventario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu.Designer.cs">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="clases\Producto.cs" />
+    <Compile Include="CRUDs\MostrarDatosDgv.cs" />
+    <Compile Include="Perfil_Barberos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Perfil_Barberos.Designer.cs">
+      <DependentUpon>Perfil_Barberos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RegistroDeUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegistroDeUsuario.Designer.cs">
+      <DependentUpon>RegistroDeUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="clases\ticket.cs" />
+    <Compile Include="CRUDs\ticketCRUD.cs" />
+    <Compile Include="SqlServerTypes\Loader.cs" />
+    <Compile Include="ticketVenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ticketVenta.Designer.cs">
+      <DependentUpon>ticketVenta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Validaciones.cs" />
+    <Compile Include="Validaciones2.cs" />
+    <Compile Include="Ventas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ventas.Designer.cs">
+      <DependentUpon>Ventas.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AgregarBarbero.resx">
+      <DependentUpon>AgregarBarbero.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Calendarizacion.resx">
+      <DependentUpon>Calendarizacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DespliegueActividad2.resx">
+      <DependentUpon>DespliegueActividad2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DespliegueHorario.resx">
+      <DependentUpon>DespliegueHorario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FondoGeneral.resx">
+      <DependentUpon>FondoGeneral.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCajachica.resx">
+      <DependentUpon>FormCajachica.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCliente.resx">
+      <DependentUpon>FormCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRegistro.resx">
+      <DependentUpon>FormRegistro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InicioDeSesion.resx">
+      <DependentUpon>InicioDeSesion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventario.resx">
+      <DependentUpon>Inventario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu.resx">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Perfil_Barberos.resx">
+      <DependentUpon>Perfil_Barberos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="RegistroDeUsuario.resx">
+      <DependentUpon>RegistroDeUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TicketGenerado.rdlc" />
+    <EmbeddedResource Include="ticketVenta.resx">
+      <DependentUpon>ticketVenta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ventas.resx">
+      <DependentUpon>Ventas.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="BarberH_TemporaryKey.pfx" />
+    <None Include="DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet1.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet1.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\DataSources\BarberH.clases.ticketGenerado.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icono-de-combinación-para-categoría-rango-y-serie-clase-jerarquía-logotipo-159893237.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\perfil-empty1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngwing.com.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngwing_com.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngwing_com1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\perfil-empty2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icono-de-combinación-para-categoría-rango-y-serie-clase-jerarquía-logotipo-1598932371.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Excel">
+      <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>9</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="SqlServerTypes\readme.htm" />
+    <Content Include="SqlServerTypes\x64\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x64\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 y x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
